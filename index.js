@@ -2,14 +2,13 @@ import TelegramBot from 'node-telegram-bot-api';
 import { reminders } from './reminders.js';
 import cron from 'node-cron';
 import env from 'dotenv';
-const config = env.config();
+const token = process.env.TELEGRAM_TOKEN;
 
-const token = config.parsed?.TELEGRAM_TOKEN;
-
-if (!token)
+if (!token) {
 	throw new Error(
 		'No token specified in config. Expected parameter TELEGRAM_TOKEN to be present.'
 	);
+}
 
 const bot = new TelegramBot(token, { polling: true });
 
