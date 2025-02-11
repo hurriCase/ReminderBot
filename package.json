@@ -1,0 +1,44 @@
+{
+	"name": "wuespace-telegram-reminder",
+	"version": "2.1.0",
+	"description": "A Telegram bot for sending reminders in group channels",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node .",
+		"deploy": "forever start index.js",
+		"deploy:stop": "forever stop index.js",
+		"deploy:restart": "forever restart index.js",
+		"release": "standard-version",
+		"style": "prettier --write .",
+		"style:ci": "prettier --list-different .",
+		"check": "tsc --noEmit"
+	},
+	"keywords": [],
+	"author": "WüSpace e. V.",
+	"engines": {
+		"node": ">=16"
+	},
+	"private": true,
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"forever": "^4.0.3",
+		"node-cron": "^3.0.1",
+		"node-telegram-bot-api": "^0.64.0",
+		"standard-version": "^9.5.0"
+	},
+	"devDependencies": {
+		"@types/node-cron": "^3.0.2",
+		"@types/node-telegram-bot-api": "^0.61.7",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
+	},
+	"contributors": [
+		{
+			"name": "Pablo Klaschka",
+			"url": "https://github.com/pklaschka",
+			"email": "pablo.klaschka@wuespace.de"
+		}
+	]
+}
