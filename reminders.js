@@ -9,7 +9,7 @@ if (!pr)
 export const reminders = pr
 	? [
 		{
-			cron: '30 16 * * *',
+			cron: '0 17 * * *',
 			message: 'Напоминание сделать чек-ин в E-Book',
 			chatIds: [pr],
 		}
