@@ -8,10 +8,9 @@ if (!pr)
 
 export const reminders = pr
 	? [
-		// Your reminders here
 		{
-			cron: '* * * * *',
-			message: '🔔 Test reminder!',
+			cron: '30 16 * * *',
+			message: 'Напоминание сделать чек-ин в E-Book',
 			chatIds: [pr],
 		}
 	]
