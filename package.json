@@ -5,8 +5,9 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"start": "node .",
-		"deploy": "forever start index.js",
+		"start": "node index.js",
+		"dev": "node index.js",
+		"deploy": "node index.js",
 		"deploy:stop": "forever stop index.js",
 		"deploy:restart": "forever restart index.js",
 		"release": "standard-version",
