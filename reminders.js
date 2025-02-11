@@ -1,7 +1,4 @@
-import env from 'dotenv';
-const config = env.config();
-
-const pr = config.parsed?.PR_CHAT_ID;
+const pr = process.env.PR_CHAT_ID;
 
 if (!pr)
 	console.log(
@@ -11,10 +8,10 @@ if (!pr)
 
 export const reminders = pr
 	? [
-		// Test reminder that runs every minute
+		// Your reminders here
 		{
-			cron: '* * * * *',  // every minute
-			message: '🔔 This is a test reminder!',
+			cron: '* * * * *',
+			message: '🔔 Test reminder!',
 			chatIds: [pr],
 		}
 	]
