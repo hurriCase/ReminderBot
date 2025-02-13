@@ -2,6 +2,9 @@ import TelegramBot from 'node-telegram-bot-api';
 import { reminders } from './reminders.js';
 import cron from 'node-cron';
 import env from 'dotenv';
+
+env.config();
+
 const token = process.env.TELEGRAM_TOKEN;
 
 if (!token) {
