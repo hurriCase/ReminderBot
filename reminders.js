@@ -12,6 +12,11 @@ export const reminders = pr
 			cron: '0 17 * * *',
 			message: 'Напоминание сделать чек-ин в TBook - https://t.me/tbook\\_incentive\\_bot/tbook?startapp=WyIzIl0',
 			chatIds: [pr],
+		},
+		{
+			cron: '30 18 * * *',
+			message: 'Сделать чек-ин в сониуме',
+			chatIds: [pr],
 		}
 	]
 	: [];
