@@ -14,8 +14,13 @@ export const reminders = pr
 			chatIds: [pr],
 		},
 		{
-			cron: '30 18 * * *',
+			cron: '30 16 * * *',
 			message: 'Сделать чек-ин в сониуме',
+			chatIds: [pr],
+		},
+		{
+			cron: '00 15 * * *',
+			message: 'ЖЕСТКИЙ ЧЕКИН НА ЛЯМ БАКСОВ НЕ ЗАБЫТЬ СРОЧНО, 1 ДЕНЬ ПРОСЛАКАЛ И СОСЕШЬ https://t.me/m5bank\\_bot?start=\\_tgr\\_x6OcO901OTMy',
 			chatIds: [pr],
 		}
 	]
